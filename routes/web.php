@@ -19,6 +19,14 @@ Route::get('/calender', function () {
   return view('calender/calender');
 })->name('calender');
 
+Route::get('/newhome', function () {
+  return view('newhome');
+});
+
+Route::get('/seminar', function () {
+  return view('seminar');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

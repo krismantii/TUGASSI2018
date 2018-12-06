@@ -68,7 +68,7 @@ body {
                                 <li class="">
                                     <a href="cv">
                                         <div class="text-center">
-                                            <i class="fa fa-phone"></i> Contac Me
+                                            <i class="fa fa-phone"></i> Contact Me
                                         </div>
                                     </a>
                                 </li>
