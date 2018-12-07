@@ -27,6 +27,22 @@ Route::get('/seminar', function () {
   return view('seminar');
 });
 
+
+Route::get('/absensi', function () {
+  return view('absensi');
+});
+
+
+Route::get('/gaji', function () {
+  return view('gaji');
+});
+
+Route::get('/kalender', function () {
+  return view('kalender');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

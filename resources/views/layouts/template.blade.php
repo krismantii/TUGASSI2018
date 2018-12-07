@@ -124,33 +124,23 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ url('/absensi') }}">
+              <i class="ni ni-watch-time text-yellow"></i> Absensi
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/gaji') }}">
+              <i class="ni ni-tag text-orange"></i> Gaji
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ url('/seminar') }}">
               <i class="ni ni-planet text-blue"></i> Seminar
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./examples/maps.html">
-              <i class="ni ni-pin-3 text-orange"></i> Maps
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> User profile
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./examples/tables.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> Tables
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> Login
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> Register
+            <a class="nav-link" href="{{ url('/kalender') }}">
+              <i class="ni ni-calendar-grid-58 text-info"></i> Kalender
             </a>
           </li>
         </ul>
@@ -185,6 +175,9 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
+        
+         <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">@yield('title')</a>
+        
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
           <div class="form-group mb-0">
@@ -307,7 +300,33 @@
       </div>
     </div>
     @yield('content')    
-</div>
+<!-- Footer -->
+        <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-xl-6">
+            <div class="copyright text-center text-xl-left text-muted">
+              &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
   <!-- Argon Scripts -->
   <!-- Core -->
   <script src="./vendor/jquery/dist/jquery.min.js"></script>
